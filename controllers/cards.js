@@ -1,4 +1,4 @@
-const Card = require('../models/card');
+const Card = require('../models/cards.js');
 
 module.exports.getCards = async (req, res) => {
   try {
@@ -20,6 +20,7 @@ module.exports.createCard = async (req, res) => {
     return res.status(400).json({ message: 'Datos inválidos para crear la tarjeta' });
 }
 res.status(500).json({ message: 'Error del servidor al crear la tarjeta' });
+  }
 };
 
 module.exports.deleteCard = async (req, res) => {
