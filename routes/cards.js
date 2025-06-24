@@ -1,4 +1,5 @@
-const express = require ('express');
+const express = require('express');
+
 const router = express.Router();
 const {
   getCards,
@@ -9,3 +10,5 @@ const {
 router.get('/', getCards);
 router.post('/', createCard);
 router.delete('/:cardId', deleteCard);
+
+module.exports = router;

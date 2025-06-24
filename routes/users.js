@@ -1,11 +1,12 @@
 const express = require('express');
+
 const router = express.Router();
 
 const {
   getUsers,
   getUserById,
   createUser,
-  updateUser
+  updateUser,
 } = require('../controllers/users');
 
 // GET /users — todos los usuarios
